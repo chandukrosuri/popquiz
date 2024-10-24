@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Kit Pop Quiz</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel = "stylesheet", href="quiz.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <form method="POST" name="instantquiz">
+            <table border="0" width="100%" cellspacing="0" cellpadding="0">
+                <caption>JavaScript Kit Pop Quiz</caption>
+
+                <tr>
+                    <td class="center-content">
+                        <textarea name="thequestion" cols="69" wrap="virtual" readonly></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="center-content">
+                        <p><strong>Solution:</strong></p>
+                        <input type="text" name="thesolution" size="35" readonly>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="center-content">
+                        <p><strong>Your response:</strong></p>
+                        <select name="theresponse" size="1" onChange="responses()">
+                            <option value="-----">----</option>
+                            <option value="a">a</option>
+                            <option value="b">b</option>
+                            <option value="c">c</option>
+                            <option value="d">d</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="button-container">
+                            <input type="button" value="&lt;&lt; Back" name="B1"
+                                onClick="if (whichone > 1) { whichone--; generatequestions(); }">
+                            <input type="button" value="Next &gt;&gt;" name="B2"
+                                onClick="if (whichone <= total) { whichone++; generatequestions(); }">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="center-content">
+                        <small>
+                            <a href="#" onClick="whichone = 1; generatequestions(); return false">Start Over</a>
+                            <input type="checkbox" name="cmode" value="ON">
+                            <label>Cheat Mode</label>
+                        </small>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+
+    <script src="app.js"></script>
+
+
+</body>
+</html>
