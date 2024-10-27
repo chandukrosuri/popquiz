@@ -1,4 +1,4 @@
-var total = 10; // Updated total questions
+var total = 10;
 var question = new Array();
 for (let i = 1; i <= total + 1; i++) {
     eval("choice" + i + " = new Array()");

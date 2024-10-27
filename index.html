@@ -6,7 +6,7 @@
     <title>Transformers Trivia Quiz</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Courier+Prime&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
@@ -18,13 +18,20 @@
 
                 <tr>
                     <td class="center-content">
-                        <div class="question-display" readonly></div> <!-- Displaying questions here -->
+                        <textarea name="thequestion" cols="69" wrap="virtual" readonly></textarea>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="center-content">
-                        <p><strong>Your Response:</strong></p>
+                        <p><strong>Solution:</strong></p>
+                        <input type="text" name="thesolution" size="35" readonly>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="center-content">
+                        <p><strong>Your response:</strong></p>
                         <select name="theresponse" size="1" onChange="responses()">
                             <option value="-----">----</option>
                             <option value="a">a</option>
@@ -32,12 +39,6 @@
                             <option value="c">c</option>
                             <option value="d">d</option>
                         </select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="center-content">
-                        <div class="solution-display"></div> <!-- Displaying the solution dynamically -->
                     </td>
                 </tr>
 
