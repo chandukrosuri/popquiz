@@ -1,4 +1,4 @@
-var total = 5;
+var total = 10; // Updated total questions
 var question = new Array();
 for (let i = 1; i <= total + 1; i++) {
     eval("choice" + i + " = new Array()");
@@ -46,11 +46,48 @@ choice5[2] = "Soundwave";
 choice5[3] = "Megatron";
 choice5[4] = "Galvatron";
 
+// New Questions Added
+question[6] = "Which faction does Megatron lead?";
+choice6[1] = "Decepticons";
+choice6[2] = "Autobots";
+choice6[3] = "Maximals";
+choice6[4] = "Predacons";
+
+question[7] = "What is the name of Optimus Prime’s brother?";
+choice7[1] = "Rodimus";
+choice7[2] = "Sentinel Prime";
+choice7[3] = "Ultra Magnus";
+choice7[4] = "Megatron";
+
+question[8] = "Who transforms into a T-Rex in 'Beast Wars'?";
+choice8[1] = "Optimus Primal";
+choice8[2] = "Grimlock";
+choice8[3] = "Megatron";
+choice8[4] = "Dinobot";
+
+question[9] = "Which Transformer can time travel?";
+choice9[1] = "Alpha Trion";
+choice9[2] = "Vector Prime";
+choice9[3] = "Starscream";
+choice9[4] = "Shockwave";
+
+question[10] = "What is the Matrix of Leadership?";
+choice10[1] = "A source of ultimate power";
+choice10[2] = "A powerful weapon";
+choice10[3] = "An artifact that grants wisdom";
+choice10[4] = "A prison for Megatron";
+
+// Solutions for the new questions
 solution[1] = "a";
 solution[2] = "a";
 solution[3] = "c";
 solution[4] = "a";
 solution[5] = "c";
+solution[6] = "a";
+solution[7] = "d";
+solution[8] = "c";
+solution[9] = "b";
+solution[10] = "c";
 
 var whichone = 1;
 
