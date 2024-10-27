@@ -1,114 +1,106 @@
+/* Transformers-Themed Background */
 body {
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Dark background */
-    font-family: 'Poppins', sans-serif;
+    background-image: url('bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
     color: #e0e0e0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    backdrop-filter: blur(6px); /* Adds subtle blur for a futuristic feel */
 }
 
-/* Quiz container styling */
+/* Quiz Container - Metallic Card Look */
 .quiz-container {
-    background-color: #1e1e1e; /* Darker card */
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    background-image: url('ab.jpg'); /* Replace with a relevant image */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
     border-radius: 16px;
     max-width: 600px;
     width: 100%;
     padding: 30px;
     text-align: center;
+    backdrop-filter: brightness(0.85); /* Slight darkening for visibility */
 }
 
+/* Caption with Metallic Font Effect */
 caption {
-    font-size: 28px;
-    font-weight: 600;
-    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffd700; /* Gold-like color */
     margin-bottom: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9); /* 3D effect */
 }
 
+/* Textarea Styling */
 textarea {
     width: 100%;
     height: 120px;
     padding: 10px;
-    border: 1px solid #333;
+    border: 1px solid #555;
     border-radius: 8px;
-    background-color: #212121;
-    color: #f5f5f5;
+    background-color: #0d0d0d; /* Darker text area background */
+    color: #00ffff; /* Cyan text color for a futuristic look */
     font-family: 'Courier Prime', monospace;
     resize: none;
 }
 
+/* Input Field Styling */
 input[type="text"] {
     width: 80%;
     padding: 10px;
     border-radius: 8px;
-    border: 1px solid #333;
-    background-color: #212121;
-    color: #e0e0e0;
+    border: 1px solid #555;
+    background-color: #0d0d0d;
+    color: #00ffff;
     margin-top: 15px;
 }
 
+/* Dropdown Styling */
 select {
     padding: 10px;
     border-radius: 8px;
-    border: 1px solid #333;
-    background-color: #212121;
-    color: #e0e0e0;
-    margin-top: 15px;
+    border: 1px solid #555;
+    background-color: #0d0d0d;
+    color: #00ffff;
+    margin-top: 20px; 
+    margin-bottom: 15px; 
 }
 
-/* Button Styles */
-.button-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
-}
-
+/* Button Styles with Futuristic Hover Effect */
 input[type="button"] {
-    background-color: #4caf50;
+    background-color: #ff1f1f;
     color: white;
     border: none;
     padding: 12px 24px;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s;
     font-weight: 600;
 }
 
 input[type="button"]:hover {
-    background-color: #388e3c;
+    background-color: #ff6f00;
+    transform: scale(1.05); /* Subtle hover animation */
 }
 
+/* Footer and Links */
 small {
-    display: block;
     color: #aaa;
-    margin-top: 10px;
-}
-
-input[type="checkbox"] {
-    margin-left: 5px;
 }
 
 a {
-    color: #4caf50;
+    color: #ffd700;
     text-decoration: none;
     font-weight: 500;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-footer {
-    margin-top: 20px;
-    font-size: 12px;
-    color: #888;
-}
-
-.center-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
